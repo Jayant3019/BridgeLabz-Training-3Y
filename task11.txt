@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Span Elements</title>
+</head>
+<body>
+
+    <!-- Three span elements -->
+    <p>
+        <span>Student</span> |
+        <span>Developer</span> |
+        <span>Programmer</span>
+    </p>
+
+</body>
+</html>

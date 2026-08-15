@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline Formatting</title>
+</head>
+<body>
+
+    <!-- Multiple inline elements -->
+    <p>
+        <strong>Learning</strong> web development is
+        <em>interesting</em> and <mark>creative</mark>.
+        <br>
+        <small>Keep learning and practicing every day.</small>
+    </p>
+
+</body>
+</html>

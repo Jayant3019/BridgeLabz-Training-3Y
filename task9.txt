@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Emphasis</title>
+</head>
+<body>
+
+    <!-- Strong and emphasis elements -->
+    <p><strong>Practice</strong> is very important, and <em>consistency</em> helps us improve.</p>
+
+</body>
+</html>

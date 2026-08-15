@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Web Page</title>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Introduction section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! My name is jayant chauhan. I am a Computer Science student interested in programming and web development.</p>
+        </section>
+
+        <!-- Blog article -->
+        <article>
+            <h2>My First Blog</h2>
+            <p>My web development journey has started with HTML. I am learning how to create structured and meaningful web pages.</p>
+        </article>
+
+        <!-- Useful links -->
+        <aside>
+            <h2>Useful Links</h2>
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <br>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 jayant chauhan</p>
+    </footer>
+
+</body>
+</html>

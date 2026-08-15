@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Blog</title>
+</head>
+<body>
+
+    <!-- Blog article -->
+    <main>
+        <article>
+            <h2>My First Blog</h2>
+            <p>Today I started learning HTML. HTML is the foundation of web development and helps create the structure of web pages.</p>
+        </article>
+    </main>
+
+</body>
+</html>

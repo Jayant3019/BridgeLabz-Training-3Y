@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Footer</title>
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 jayant chauhan</p>
+    </footer>
+
+</body>
+</html>
