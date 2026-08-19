@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Hobby</title>
+</head>
+<body>
+
+    <!-- Hobby paragraph -->
+    <p>My favorite hobby is <strong>coding</strong> because it helps me create useful projects. I also enjoy <em>playing games</em> in my free time.</p>
+
+</body>
+</html>
