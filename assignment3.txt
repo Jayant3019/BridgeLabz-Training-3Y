@@ -2,4 +2,132 @@ HTML ASSIGNMENT
 Questions and Answers
 Only HTML — No CSS or JavaScript
 
-[Same Assignment 3 content from the uploaded file]
+============================================================
+QUESTION 1
+Create a multi-section resume page using only HTML.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Resume - Jayant Chauhan</title></head><body>
+<header><h1>Jayant Chauhan</h1><p>Email: jayant@example.com</p><p>Phone: +91 9876543210</p></header>
+<nav><a href="#about">About</a> | <a href="#skills">Skills</a> | <a href="#projects">Projects</a> | <a href="#education">Education</a></nav>
+<main><section id="about"><h2>About Me</h2><p>I am a Computer Science student interested in web development, programming and artificial intelligence.</p></section><section id="skills"><h2>Skills</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li></ul></section><section id="projects"><h2>Projects</h2><ol><li>AI Interview Website</li><li>Student Performance Prediction</li><li>Personal Portfolio Website</li></ol></section><section id="education"><h2>Education</h2><table border="1"><tr><th>Course</th><th>Institute</th><th>Year</th></tr><tr><td>B.Tech CSE</td><td>GLA University</td><td>2026</td></tr><tr><td>12th</td><td>ABC School</td><td>2024</td></tr></table></section></main>
+<footer><p>&copy; 2026 Jayant Chauhan. All Rights Reserved.</p></footer></body></html>
+
+============================================================
+QUESTION 2
+Build a Product Catalog page for an online store using only HTML.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Product Catalog</title></head><body>
+<h1>Online Store - Product Catalog</h1><table border="1"><tr><th colspan="4">Available Products</th></tr><tr><th>Product Name</th><th>Description</th><th>Price</th><th>Availability</th></tr><tr><td><img src="laptop.jpg" alt="Laptop" width="100"><br>Laptop</td><td>High-performance laptop for students.</td><td>₹55,000</td><td rowspan="2">In Stock</td></tr><tr><td><img src="phone.jpg" alt="Smartphone" width="100"><br>Smartphone</td><td>Modern smartphone with advanced features.</td><td>₹25,000</td></tr><tr><td><img src="headphones.jpg" alt="Headphones" width="100"><br>Headphones</td><td>Wireless noise-cancelling headphones.</td><td>₹3,000</td><td>Out of Stock</td></tr></table></body></html>
+
+============================================================
+QUESTION 3
+Create a Course Registration Form structure using HTML only.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Course Registration</title></head><body>
+<h1>Course Registration Form</h1><form><fieldset><legend>Student Information</legend><label for="name">Full Name:</label><input type="text" id="name" name="name"><br><br><label for="email">Email:</label><input type="email" id="email" name="email"><br><br><label for="course">Select Course:</label><select id="course" name="course"><option value="web">Web Development</option><option value="java">Java Programming</option><option value="python">Python</option><option value="ai">Artificial Intelligence</option></select><br><br><input type="submit" value="Register"></fieldset></form><h2>Available Course Schedules</h2><table border="1"><tr><th>Day</th><th>Time</th><th>Instructor</th></tr><tr><td>Monday</td><td>10:00 AM</td><td>Mr. Sharma</td></tr><tr><td>Wednesday</td><td>12:00 PM</td><td>Ms. Priya</td></tr><tr><td>Friday</td><td>2:00 PM</td><td>Mr. Kumar</td></tr></table></body></html>
+
+============================================================
+QUESTION 4
+Create a Company Layout Page using only block-level elements.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Company Layout</title></head><body><header><h1>TechVision Solutions</h1></header><nav><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">Contact</a></nav><main><section><h2>About the Company</h2><p>TechVision Solutions provides technology and software development services to businesses.</p></section><section><h2>Services Offered</h2><ul><li>Web Development</li><li>Mobile App Development</li><li>Cloud Services</li><li>AI Solutions</li></ul></section></main><aside><h2>CEO Message</h2><blockquote>"Technology should make life simpler and businesses smarter."</blockquote></aside><footer><p>Email: contact@techvision.com</p><p>Address: Mathura, Uttar Pradesh, India</p></footer></body></html>
+
+============================================================
+QUESTION 5
+Create a Nested List Structure representing University → Departments → Courses → Topics.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>University Hierarchy</title></head><body><h1>University Departments and Courses</h1><ul><li>Computer Science and Engineering<ul><li>B.Tech<ol><li>Programming<ul><li>Java</li><li>Python</li><li>C++</li></ul></li><li>Web Development<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></li></ol></li></ul></li><li>Electronics Department<ul><li>B.Tech Electronics<ol><li>Digital Electronics<ul><li>Logic Gates</li><li>Flip Flops</li></ul></li></ol></li></ul></li></ul></body></html>
+
+============================================================
+QUESTION 6
+Build a Restaurant Menu Page using HTML.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Restaurant Menu</title></head><body><header><h1>Spice Garden Restaurant</h1></header><nav><a href="#starters">Starters</a> | <a href="#maincourse">Main Course</a> | <a href="#desserts">Desserts</a></nav><section id="starters"><h2>Starters</h2><table border="1"><tr><th>Dish Name</th><th>Description</th><th>Price</th></tr><tr><td>Paneer Tikka</td><td>Grilled paneer with spices.</td><td>₹180</td></tr><tr><td>Spring Rolls</td><td>Crispy vegetable rolls.</td><td>₹150</td></tr></table></section><section id="maincourse"><h2>Main Course</h2><table border="1"><tr><th>Dish Name</th><th>Description</th><th>Price</th></tr><tr><td>Paneer Butter Masala</td><td>Paneer cooked in creamy gravy.</td><td>₹250</td></tr><tr><td>Veg Biryani</td><td>Rice cooked with vegetables and spices.</td><td>₹220</td></tr></table></section><section id="desserts"><h2>Desserts</h2><table border="1"><tr><th>Dish Name</th><th>Description</th><th>Price</th></tr><tr><td>Gulab Jamun</td><td>Soft sweet dumplings in sugar syrup.</td><td>₹100</td></tr><tr><td>Ice Cream</td><td>Choice of vanilla or chocolate.</td><td>₹120</td></tr></table></section><footer><p>Contact: +91 9876543210</p><p>Address: Mathura, Uttar Pradesh</p></footer></body></html>
+
+============================================================
+QUESTION 7
+Design a Conference Schedule page using HTML tables and semantic tags.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Conference Schedule</title></head><body><h1>Annual Technology Conference</h1><table border="1"><thead><tr><th>Session</th><th>Time</th><th>Topic</th><th>Speaker</th></tr></thead><tbody><tr><td>Morning</td><td>09:00 AM</td><td>Artificial Intelligence</td><td>Dr. Sharma</td></tr><tr><td>Morning</td><td>11:00 AM</td><td>Web Development</td><td>Mr. Verma</td></tr><tr><td>Afternoon</td><td>02:00 PM</td><td>Cloud Computing</td><td>Ms. Priya</td></tr><tr><td>Evening</td><td>05:00 PM</td><td>Future of Technology</td><td>Dr. Kumar</td></tr></tbody><tfoot><tr><td colspan="4">Conference ends at 6:00 PM</td></tr></tfoot></table></body></html>
+
+============================================================
+QUESTION 8
+Create a Student Report Page.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Student Report</title></head><body><h1>GLA University</h1><h2>Student Academic Report</h2><table border="1"><tr><th rowspan="2" title="Student Information">Student</th><th colspan="5">Subject Marks</th></tr><tr><th>DBMS</th><th>Java</th><th>DSA</th><th>Web Development</th><th>Mathematics</th></tr><tr><td>Jayant Chauhan</td><td>85</td><td>88</td><td>82</td><td>90</td><td>86</td></tr><tr><td colspan="3"><strong>Total</strong></td><td colspan="3">431 Marks</td></tr><tr><td colspan="3"><strong>Percentage</strong></td><td colspan="3">86.2%</td></tr></table></body></html>
+
+============================================================
+QUESTION 9
+Build a Travel Destination Page.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Top 3 Travel Destinations</title></head><body><header><h1>Top 3 Travel Destinations</h1></header><main><article><h2>Paris, France</h2><img src="paris.jpg" alt="Paris" width="300"><p>Paris is famous for its beautiful architecture, museums, culture and the Eiffel Tower.</p><blockquote>"Paris is one of the most beautiful cities in the world."</blockquote></article><article><h2>Dubai, UAE</h2><img src="dubai.jpg" alt="Dubai" width="300"><p>Dubai is known for modern architecture, shopping malls, beaches and exciting attractions.</p><blockquote>"Dubai offers an amazing combination of tradition and modernity."</blockquote></article><article><h2>Manali, India</h2><img src="manali.jpg" alt="Manali" width="300"><p>Manali is a beautiful hill station known for mountains, valleys and natural beauty.</p><blockquote>"Manali is a perfect destination for nature lovers."</blockquote></article></main><aside><h2>Travel Tips</h2><ul><li>Carry important documents.</li><li>Check the weather before travelling.</li><li>Keep emergency contact numbers.</li><li>Respect local culture.</li></ul></aside><footer><p>&copy; 2026 Travel Guide</p></footer></body></html>
+
+============================================================
+QUESTION 10
+Create a Dropdown-based Selection Page.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Location Selection</title></head><body><h1>Select Your Favorite Location</h1><label for="country">Country:</label><select id="country"><option selected>India</option><option>USA</option><option>Canada</option><option>Australia</option></select><br><br><label for="state">State:</label><select id="state"><option selected>Uttar Pradesh</option><option>Rajasthan</option><option>Maharashtra</option><option>Gujarat</option></select><br><br><label for="city">City:</label><select id="city"><option selected>Mathura</option><option>Agra</option><option>Delhi</option><option>Jaipur</option></select><br><br><label for="place">Favorite Tourist Place:</label><select id="place"><option selected>Taj Mahal</option><option>Vrindavan</option><option>India Gate</option><option>Red Fort</option></select><h2>Your Choices</h2><p>You selected India as your country, Uttar Pradesh as your state, Mathura as your city, and Taj Mahal as your favorite tourist place.</p></body></html>
+
+============================================================
+QUESTION 11
+Design a News Layout Page.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Daily News</title></head><body><header><h1>Daily News</h1></header><nav><a href="#">Sports</a> | <a href="#">Technology</a> | <a href="#">Politics</a></nav><main><article><h2>India Wins Important Cricket Match</h2><time datetime="2026-08-22">August 22, 2026</time><p>India secured an important victory in today's cricket match.</p><a href="https://example.com">Source</a></article><article><h2>New Technology Trends</h2><time datetime="2026-08-22">August 22, 2026</time><p>Artificial intelligence continues to transform modern technology.</p><a href="https://example.com">Source</a></article><article><h2>New Government Announcement</h2><time datetime="2026-08-22">August 22, 2026</time><p>The government announced new initiatives for education and technology.</p><a href="https://example.com">Source</a></article></main><aside><h2>Popular Topics</h2><ul><li>Artificial Intelligence</li><li>Cricket</li><li>Education</li><li>Technology</li></ul></aside><footer><p>Contact: news@example.com</p><p>&copy; 2026 Daily News. All Rights Reserved.</p></footer></body></html>
+
+============================================================
+QUESTION 12
+Create a Quotation Showcase Page.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Quotation Showcase</title></head><body><h1>Inspirational Quotes</h1><section><h2>Quote on Success</h2><blockquote>"Success is not final; failure is not fatal."</blockquote><cite>Winston Churchill</cite></section><section><h2>Quote on Life</h2><blockquote>"The purpose of our lives is to be happy."</blockquote><cite>Dalai Lama</cite></section><section><h2>Quote on Learning</h2><blockquote>"Live as if you were to die tomorrow. Learn as if you were to live forever."</blockquote><cite>Mahatma Gandhi</cite></section><p>Quotes inspire people by providing motivation, wisdom and positive thoughts that can help them face challenges in life.</p></body></html>
+
+============================================================
+QUESTION 13
+Build a Blog Layout Page using HTML5 semantic structure.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>My Blog</title></head><body><header><h1>Jayant's Blog</h1></header><nav><a href="#">Home</a> | <a href="#">Blogs</a> | <a href="#">About</a></nav><main><article><h2>My First Blog</h2><time datetime="2026-08-22">August 22, 2026</time><p>This is my first blog. I am learning web development and exploring HTML, CSS and JavaScript.</p><blockquote>Learning something new every day helps us grow.</blockquote></article><article><h2>Things I Learned This Week</h2><time datetime="2026-08-22">August 22, 2026</time><p>This week I learned about HTML semantic elements, tables, forms and different HTML tags.</p><blockquote>Small improvements every day lead to big results.</blockquote></article></main><footer><p>Written by Jayant Chauhan</p></footer></body></html>
+
+============================================================
+QUESTION 14
+Create a Movie Database Page using a table.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Movie Database</title></head><body><h1>Movie Database</h1><table border="1"><caption>Popular Movies</caption><tr><th>Movie Name</th><th>Genre</th><th>Year</th><th>IMDB Rating</th><th>Link</th></tr><tr><td title="Movie Title">Inception</td><td>Science Fiction</td><td>2010</td><td>8.8</td><td><a href="https://www.imdb.com/">IMDB</a></td></tr><tr><td>Interstellar</td><td>Science Fiction</td><td>2014</td><td>8.7</td><td><a href="https://www.imdb.com/">IMDB</a></td></tr><tr><td>3 Idiots</td><td>Comedy/Drama</td><td>2009</td><td>8.4</td><td><a href="https://www.imdb.com/">IMDB</a></td></tr><tr><td colspan="5">More movies will be added soon.</td></tr></table><p><small>Note: IMDB ratings may change over time.</small></p></body></html>
+
+============================================================
+QUESTION 15
+Build a Portfolio Layout Page using HTML only.
+============================================================
+ANSWER:
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Jayant Chauhan - Portfolio</title></head><body><header><h1>Jayant Chauhan</h1><p>Computer Science Student & Web Developer</p></header><nav><a href="#about">About Me</a> | <a href="#skills">Skills</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a></nav><main><section id="about"><h2>About Me</h2><p>I am a Computer Science student interested in programming, web development, artificial intelligence and software development.</p><blockquote>"The best way to learn programming is by building projects."</blockquote></section><section id="skills"><h2>Skills</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li><li>Git and GitHub</li></ul></section><section id="projects"><h2>Projects</h2><ol><li>AI Interview Website</li><li>Student Performance Prediction</li><li>Personal Portfolio Website</li><li>Restaurant Website</li></ol></section></main><aside id="contact"><h2>Contact Information</h2><p>Email: jayant@example.com</p><p>Phone: +91 9876543210</p><p>LinkedIn: <a href="https://www.linkedin.com/">LinkedIn Profile</a></p></aside><footer><p>&copy; 2026 Jayant Chauhan. All Rights Reserved.</p></footer></body></html>
+
+============================================================
+END OF ASSIGNMENT
+============================================================
