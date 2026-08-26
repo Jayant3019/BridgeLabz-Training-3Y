@@ -1,0 +1,438 @@
+======================================================================
+FILE: 01-youtube.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>YouTube Video</title></head>
+<body>
+<h1>My YouTube Video</h1>
+<iframe width="80%" height="50%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video"></iframe>
+</body>
+</html>
+
+
+======================================================================
+FILE: 02-google-map.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>My City Map</title></head>
+<body>
+<h1>My City</h1>
+<!-- loading="lazy" makes the map load only when it is near the visible area. -->
+<iframe src="https://www.google.com/maps?q=Delhi&output=embed" title="Google Map showing Delhi" width="600" height="450" loading="lazy"></iframe>
+</body>
+</html>
+
+
+======================================================================
+FILE: 03-iframes.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>My Pages</title></head>
+<body>
+<iframe src="introduction.html" width="600" height="250"></iframe>
+<br><br>
+<iframe src="hobby.html" width="600" height="250"></iframe>
+</body>
+</html>
+
+
+======================================================================
+FILE: introduction.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Introduction</title></head>
+<body>
+<h1>My Introduction</h1>
+<p>Hello! My name is Jayant.</p>
+<p>I am learning HTML and Java.</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: hobby.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>My Hobby</title></head>
+<body>
+<h1>My Favorite Hobby</h1>
+<p>My favorite hobby is coding.</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 04-frameset.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<frameset rows="20%,80%">
+<frame src="navigation.html">
+<frame src="welcome.html">
+</frameset>
+</html>
+
+
+======================================================================
+FILE: navigation.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<body>
+<a href="#">Home</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+</body>
+</html>
+
+
+======================================================================
+FILE: welcome.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Welcome to My Website</h1>
+</body>
+</html>
+
+
+======================================================================
+FILE: 05-utf8.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Jayant">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UTF-8 Example</title>
+</head>
+<body>
+<p>Hello, नमस्ते, こんにちは</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 06-registration.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Registration Form</title></head>
+<body>
+<h1>User Registration</h1>
+<form>
+<label>Full Name:</label>
+<input type="text" name="fullname" required><br><br>
+<label>Email Address:</label>
+<input type="email" name="email" required><br><br>
+<label>Password:</label>
+<input type="password" name="password" required><br><br>
+<label>Confirm Password:</label>
+<input type="password" name="confirm_password" required><br><br>
+<button type="submit">Register</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 07-login.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Login Form</title></head>
+<body>
+<h1>Login</h1>
+<!-- A CSRF token helps protect forms from unauthorized requests made by another website. -->
+<form>
+<label>Username:</label>
+<input type="text" name="username" required><br><br>
+<label>Password:</label>
+<input type="password" name="password" required><br><br>
+<input type="hidden" name="csrf_token" value="dummy123">
+<button type="submit">Login</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 08-feedback.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Feedback Form</title></head>
+<body>
+<h1>Feedback</h1>
+<form method="post" action="#">
+<label>Feedback:</label><br>
+<textarea name="feedback" rows="5" cols="40"></textarea><br><br>
+<label>Rating:</label><br>
+<input type="radio" name="rating" value="Good"><label>Good</label>
+<input type="radio" name="rating" value="Average"><label>Average</label>
+<input type="radio" name="rating" value="Poor"><label>Poor</label><br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 09-upload.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>File Upload</title></head>
+<body>
+<h1>Upload Image</h1>
+<form>
+<input type="file" name="image" accept=".jpg,.png"><br><br>
+<p>Only JPG and PNG image files are allowed.</p>
+<button type="submit">Upload</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 10-contact.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Contact Form</title></head>
+<body>
+<h1>Contact Us</h1>
+<form>
+<input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+<input type="email" name="email" placeholder="Enter your email" required><br><br>
+<input type="text" name="subject" placeholder="Enter subject" required><br><br>
+<textarea name="message" placeholder="Enter your message" required></textarea><br><br>
+<button type="submit">Send Message</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 11-student.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Student Information</title></head>
+<body>
+<h1>Student Information</h1>
+<form>
+<label>Name:</label>
+<input type="text" name="name" required><br><br>
+<label>Roll Number:</label>
+<input type="text" name="roll" required><br><br>
+<label>Course:</label>
+<select name="course" required>
+<option value="" disabled selected>Select Course</option>
+<option value="BCA">BCA</option>
+<option value="BTech">B.Tech</option>
+<option value="MCA">MCA</option>
+<option value="BBA">BBA</option>
+</select><br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 12-entities.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>HTML Entities</title></head>
+<body>
+<p>
+Less than: &lt;
+Greater than: &gt;
+Ampersand: &amp;
+Double Quote: &quot;
+Single Quote: &apos;
+Copyright: &copy;
+Trademark: &trade;
+Registered: &reg;
+</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 13-languages.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Three Languages</title>
+</head>
+<body>
+<h1>Languages</h1>
+<p>
+English: Hello, how are you?<br>
+Hindi: नमस्ते, आप कैसे हैं?<br>
+French: Bonjour, comment allez-vous?
+</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 14-wikipedia.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>External Website</title></head>
+<body>
+<h1>Wikipedia</h1>
+<iframe src="https://www.wikipedia.org" width="800" height="500" title="Wikipedia"></iframe>
+<p>Some websites may not allow embedding for security reasons.</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 15-payment.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Payment Form</title></head>
+<body>
+<h1>Payment Form</h1>
+<form>
+<label>Cardholder Name:</label>
+<input type="text" name="cardholder" required><br><br>
+<label>Card Number:</label>
+<input type="text" name="cardnumber" required><br><br>
+<label>Expiry Date:</label>
+<input type="text" name="expiry" placeholder="MM/YY" required><br><br>
+<label>CVV:</label>
+<input type="password" name="cvv" required><br><br>
+<button type="submit">Pay Now</button>
+</form>
+</body>
+</html>
+
+
+======================================================================
+FILE: 16-uri.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>URI Encoding</title></head>
+<body>
+<h1>URI Encoding Example</h1>
+<p>Encoded URL:</p>
+<a href="https://example.com/search?query=HTML%20%26%20CSS">Search HTML & CSS</a>
+</body>
+</html>
+
+
+======================================================================
+FILE: 17-form.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Form</title></head>
+<body>
+<h1>My Form</h1>
+<form action="result.html" target="resultFrame">
+<input type="text" name="name" placeholder="Enter your name">
+<button type="submit">Submit</button>
+</form>
+<br>
+<iframe name="resultFrame" width="500" height="200"></iframe>
+</body>
+</html>
+
+
+======================================================================
+FILE: result.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Result</title></head>
+<body>
+<h2>Form successfully submitted.</h2>
+</body>
+</html>
+
+
+======================================================================
+FILE: 18-quotes.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Quotations</title></head>
+<body>
+<h1>Quotes</h1>
+<blockquote>
+The future belongs to those who believe in the beauty of their dreams &amp; work hard to achieve them.
+</blockquote>
+<p>My teacher always says, <q>Keep learning and keep improving.</q></p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 19-security.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head><title>Form Security</title></head>
+<body>
+<h1>Secure Form</h1>
+<form autocomplete="off">
+<label>Name:</label>
+<input type="text" name="name" required><br><br>
+<label>Email:</label>
+<input type="email" name="email" required><br><br>
+<label>Password:</label>
+<input type="password" name="password" required><br><br>
+<button type="submit">Submit</button>
+</form>
+<p>Turning off autocomplete can reduce the chance of sensitive information being automatically stored or filled in by the browser.</p>
+</body>
+</html>
+
+
+======================================================================
+FILE: 20-head-elements.html
+======================================================================
+<!DOCTYPE html>
+<html>
+<head>
+<!-- The title sets the text displayed in the browser tab. -->
+<title>Important Head Elements</title>
+<!-- The charset defines the character encoding. -->
+<meta charset="UTF-8">
+<!-- The description provides a summary of the webpage. -->
+<meta name="description" content="A webpage demonstrating important HTML head elements">
+<!-- The author identifies who created the webpage. -->
+<meta name="author" content="Jayant">
+<!-- The base sets the base URL for relative URLs. -->
+<base href="https://example.com/">
+<!-- The link connects an external resource such as a favicon. -->
+<link rel="icon" href="favicon.ico">
+<!-- The style tag contains CSS. -->
+<style></style>
+<!-- The script tag contains JavaScript. -->
+<script></script>
+</head>
+<body>
+<h1>Important HTML Head Elements</h1>
+<p>This page demonstrates important elements used inside the head section.</p>
+</body>
+</html>
+
