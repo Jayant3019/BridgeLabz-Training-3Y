@@ -1,0 +1,1 @@
+.product-card{transition:transform .3s ease,box-shadow .3s ease}.product-card:hover{transform:translateY(-6px);box-shadow:0 1rem 2rem rgba(0,0,0,.12)!important}.card-img-top{height:210px;object-fit:cover}
