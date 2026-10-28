@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form Validator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 520px; margin: 30px auto; padding: 0 16px; }
+        label { display: block; margin-top: 12px; }
+        input { width: 100%; box-sizing: border-box; padding: 9px; border: 2px solid #aaa; border-radius: 5px; }
+        .valid { border-color: green; }
+        .invalid { border-color: red; }
+        .error { color: red; font-size: 0.9rem; min-height: 18px; }
+        button { margin-top: 16px; padding: 9px 14px; }
+        #result { margin-top: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form id="studentForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name">
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" autocomplete="email">
+        <div class="error" id="emailError"></div>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" inputmode="numeric" autocomplete="tel">
+        <div class="error" id="phoneError"></div>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password">
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit">Register</button>
+        <p id="result" aria-live="polite"></p>
+    </form>
+    <script src="Q2_StudentFormValidator.js"></script>
+</body>
+</html>
