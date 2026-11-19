@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit Blocker and Live Errors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Q9_FormSubmitBlocker.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>Assignment 7 – DOM</h1>
+    
+<h2>Registration Form Validation</h2>
+<form id="registrationForm" novalidate>
+  <label>Name<br><input id="userName" type="text"></label>
+  <p class="error" id="userNameError"></p>
+  <label>Email<br><input id="userEmail" type="text"></label>
+  <p class="error" id="userEmailError"></p>
+  <label>Password<br><input id="userPassword" type="password"></label>
+  <p class="error" id="userPasswordError"></p>
+  <button type="submit">Submit</button>
+</form>
+<p id="formSuccess" class="success" role="status"></p>
+</main>
+</body>
+</html>
