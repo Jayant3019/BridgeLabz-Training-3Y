@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f8fafc; color: #1e293b; }
+header, footer { background: #4c1d95; color: #fff; text-align: center; padding: 1.25rem 1rem; }
+header h1 { margin: 0 0 .25rem; }
+header p, footer p { margin: 0; }
+
+main { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem; }
+section { background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.12); padding: 1rem 1.5rem; margin-bottom: 1.25rem; }
+h2 { margin-top: 0; }
+
+/* ---------- ATTRIBUTE SELECTORS ---------- */
+/* Links that begin with https get a green color and a lock */
+a[href^="https"] { color: #15803d; font-weight: bold; }
+a[href^="https"]::before { content: "🔒 "; }          /* ::before pseudo-element adds an icon first */
+/* Links that end with .pdf get a document icon after the text */
+a[href$=".pdf"]::after { content: " 📄"; }              /* ::after pseudo-element adds an icon last */
+/* Exact attribute match: only plain-text inputs get a blue border */
+input[type="text"]     { border: 2px solid #2563eb; }
+input[type="email"]    { border: 2px solid #d97706; }
+input[type="password"] { border: 2px solid #dc2626; }
+
+/* ---------- PSEUDO-CLASSES ---------- */
+/* :nth-child(odd/even) stripes the list items */
+.resources { list-style: none; padding: 0; margin: 0; }
+.resources li { padding: .6rem .8rem; }
+.resources li:nth-child(odd)  { background: #ede9fe; }
+.resources li:nth-child(even) { background: #fef9c3; }
+/* :hover highlights the row under the pointer */
+.resources li:hover { background: #fecaca; }
+a:hover { text-decoration: underline wavy; }
+
+/* :focus highlights the field being typed in */
+.demo-form { display: flex; flex-direction: column; gap: .5rem; }
+.demo-form input { padding: .6rem; border-radius: 6px; font-size: 1rem; transition: box-shadow .2s, background .2s; }
+.demo-form input:focus { outline: none; background: #f0fdf4; box-shadow: 0 0 0 4px rgba(34,197,94,.35); }
+
+/* ---------- COMBINATORS ---------- */
+/* Descendant: every p anywhere inside .wrapper gets a dashed border */
+.wrapper p { border: 1px dashed #64748b; padding: .4rem; margin: .4rem 0; }
+/* Child (>): only direct-child p of .wrapper gets a blue background */
+.wrapper > p { background: #dbeafe; }
+/* Nested paragraph keeps the descendant style but gets pink via its own rule */
+.nested p { background: #fce7f3; }
+/* Adjacent sibling (+): only the first p after .marker */
+.marker + p { background: #bbf7d0; padding: .4rem; }
+/* General sibling (~): every p that follows .marker gets a left bar */
+.marker ~ p { border-left: 5px solid #7c3aed; padding-left: .6rem; }

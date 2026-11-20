@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outline and Focus Form</title>
+  <link rel="stylesheet" href="q9_outline_form.css">
+</head>
+<body>
+  <header>
+    <h1>Feedback Form</h1>
+    <p>Click or Tab into each field to see its focus outline.</p>
+  </header>
+
+  <main>
+    <form class="form" action="#">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="outline-solid" placeholder="Solid outline on focus">
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="outline-dashed" placeholder="Dashed outline on focus">
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" class="outline-dotted" placeholder="Dotted outline on focus">
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" class="outline-double" placeholder="Double outline with a bigger offset"></textarea>
+      </div>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

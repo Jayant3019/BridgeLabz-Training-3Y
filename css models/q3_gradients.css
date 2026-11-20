@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  /* Reserve space for the fixed header (64px) and footer (48px) */
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+/* ---------- Fixed header and footer ---------- */
+header, footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, .95);
+  text-align: center;
+  z-index: 10;
+}
+header { top: 0; height: 64px; display: flex; align-items: center; justify-content: center; }
+header h1 { margin: 0; font-size: 1.4rem; }
+footer { bottom: 0; height: 48px; display: flex; align-items: center; justify-content: center; }
+footer p { margin: 0; font-size: .9rem; }
+
+/* ---------- Sections ---------- */
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.content {
+  max-width: 600px;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, .35);   /* dark panel keeps text readable on any color */
+  border-radius: 12px;
+  line-height: 1.6;
+}
+.content h2 { margin-top: 0; font-size: 2rem; }
+code { background: rgba(255,255,255,.2); padding: 0 .3rem; border-radius: 4px; }
+
+/* Linear gradient + fixed attachment (parallax-like) */
+.linear {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  background-attachment: fixed;
+}
+
+/* Radial gradient */
+.radial {
+  background: radial-gradient(circle at center, #56ccf2, #2f80ed, #1b2a6b);
+}

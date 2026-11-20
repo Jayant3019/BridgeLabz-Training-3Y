@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Height and Width Practice</title>
+  <link rel="stylesheet" href="q2_height_width.css">
+</head>
+<body>
+  <header>
+    <h1>Height &amp; Width Units</h1>
+  </header>
+
+  <main>
+    <section class="stage">
+      <article class="box box-px">
+        <h2>px</h2>
+        <p>width: 260px<br>height: 180px<br>overflow: hidden</p>
+        <p>This extra text is longer than the box height, so the overflow is clipped and the end of this paragraph is hidden from view.</p>
+      </article>
+
+      <article class="box box-percent">
+        <h2>% and min-height</h2>
+        <p>width: 40%<br>min-height: 150px<br>max-width: 380px</p>
+        <p>Grows taller if needed because only a minimum height is set.</p>
+      </article>
+
+      <article class="box box-vh-em">
+        <h2>vh and em</h2>
+        <p>height: 25vh<br>width: 18em<br>overflow: auto</p>
+        <p>This box scrolls when its content is taller than 25% of the viewport height. Resize the window to see it react. More text keeps this paragraph long enough to scroll.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="q5_advanced_selectors.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Selectors</h1>
+    <p>Hover over links and click into the inputs.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resource list (links)</h2>
+      <ul class="resources">
+        <li><a href="https://developer.mozilla.org">MDN Web Docs (https)</a></li>
+        <li><a href="https://css-tricks.com">CSS-Tricks (https)</a></li>
+        <li><a href="notes.html">Local notes page</a></li>
+        <li><a href="guide.pdf">Study guide PDF</a></li>
+        <li><a href="http://example.com">Plain http link</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Form fields</h2>
+      <form class="demo-form">
+        <label for="n">Name (type="text")</label>
+        <input type="text" id="n" placeholder="Your name">
+        <label for="e">Email (type="email")</label>
+        <input type="email" id="e" placeholder="you@example.com">
+        <label for="p">Password (type="password")</label>
+        <input type="password" id="p" placeholder="••••••">
+      </form>
+    </section>
+
+    <section class="combinators">
+      <h2>Combinators</h2>
+      <div class="wrapper">
+        <p>Direct child of .wrapper.</p>
+        <div class="nested"><p>Nested paragraph inside .nested.</p></div>
+      </div>
+      <h3 class="marker">Marker heading</h3>
+      <p>Adjacent sibling paragraph.</p>
+      <p>Another general sibling paragraph.</p>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

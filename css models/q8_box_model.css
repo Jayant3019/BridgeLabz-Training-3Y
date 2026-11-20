@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+header, footer { background: #1e293b; color: #fff; text-align: center; padding: 1.25rem 1rem; }
+header h1 { margin: 0 0 .25rem; }
+header p, footer p { margin: 0; }
+
+/* Flexbox centers each demonstration */
+main { display: flex; flex-direction: column; align-items: center; gap: 2rem; padding: 2rem 1rem; }
+section { width: 100%; max-width: 700px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+h2 { margin: 0 0 1rem; }
+
+/* ---------- Part 1: layered diagram (nested boxes, each layer has its own color/outline) ---------- */
+.diagram { display: flex; justify-content: center; }
+.label { display: block; font-size: .75rem; font-weight: bold; text-transform: uppercase; margin-bottom: 4px; }
+
+.margin-layer  { background: #fed7aa; outline: 2px dashed #ea580c; padding: 30px; }    /* margin area */
+.border-layer  { background: #fde047; border: 14px solid #ca8a04; padding: 0; }        /* real border */
+.padding-layer { background: #bbf7d0; outline: 2px dotted #16a34a; padding: 28px; }    /* padding area */
+.content-layer { background: #93c5fd; outline: 2px solid #1d4ed8; padding: 18px 28px; font-weight: bold; }
+
+.margin-layer > .label  { margin-top: -22px; }
+.border-layer > .label  { padding: 4px 8px; }
+.padding-layer > .label { margin-top: -20px; }
+
+.legend { list-style: none; padding: 0; margin: 1.5rem 0 0; text-align: left; display: flex; flex-direction: column; gap: .5rem; }
+.swatch { display: inline-block; width: 16px; height: 16px; margin-right: .5rem; vertical-align: middle; border: 1px solid #475569; }
+.content-sw { background: #93c5fd; }
+.padding-sw { background: #bbf7d0; }
+.border-sw  { background: #ca8a04; }
+.margin-sw  { background: #fed7aa; }
+
+/* ---------- Part 2: box-sizing comparison ---------- */
+.compare { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+.demo {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #1e293b;
+  text-align: left;
+}
+.demo h3 { margin: 0 0 .5rem; }
+.demo p { margin: 0; font-size: .9rem; }
+.default-box { background: #fecaca; }                          /* content-box (default) */
+.border-box  { background: #bbf7d0; box-sizing: border-box; }  /* border-box */

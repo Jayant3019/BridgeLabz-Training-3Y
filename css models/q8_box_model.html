@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="q8_box_model.css">
+</head>
+<body>
+  <header>
+    <h1>The CSS Box Model</h1>
+    <p>Every element is a stack of four layers.</p>
+  </header>
+
+  <main>
+    <!-- Part 1: visual layers -->
+    <section class="layers-section">
+      <h2>1. The four layers</h2>
+      <div class="diagram">
+        <div class="margin-layer">
+          <span class="label">margin</span>
+          <div class="border-layer">
+            <span class="label">border</span>
+            <div class="padding-layer">
+              <span class="label">padding</span>
+              <div class="content-layer">content</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="legend">
+        <li><span class="swatch content-sw"></span><strong>Content</strong> – the text or image itself.</li>
+        <li><span class="swatch padding-sw"></span><strong>Padding</strong> – space between content and border.</li>
+        <li><span class="swatch border-sw"></span><strong>Border</strong> – the line wrapping padding and content.</li>
+        <li><span class="swatch margin-sw"></span><strong>Margin</strong> – transparent space outside the border.</li>
+      </ul>
+    </section>
+
+    <!-- Part 2: default vs border-box -->
+    <section class="compare-section">
+      <h2>2. content-box vs border-box</h2>
+      <div class="compare">
+        <div class="demo default-box">
+          <h3>Default</h3>
+          <p>width: 200px + padding 20px×2 + border 5px×2 = <strong>250px</strong> wide.</p>
+        </div>
+        <div class="demo border-box">
+          <h3>border-box</h3>
+          <p>padding and border are inside the 200px = <strong>200px</strong> wide.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

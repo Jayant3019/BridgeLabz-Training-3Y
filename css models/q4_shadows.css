@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e2e8f0;
+  color: #1e293b;
+}
+header, footer { text-align: center; padding: 1.25rem 1rem; }
+header h1 { margin: 0 0 .25rem; text-shadow: 2px 2px 4px rgba(0,0,0,.3); }  /* heading depth */
+header p, footer p { margin: 0; color: #475569; }
+
+main { padding: 2rem 1rem 3rem; }
+
+/* Single row of cards (wraps on narrow screens) */
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1000px; margin: 0 auto; }
+
+.card {
+  flex: 1 1 260px;
+  max-width: 300px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card h2 { margin: 0 0 .25rem; text-shadow: 1px 2px 3px rgba(0,0,0,.25); }   /* text-shadow on headings */
+.role { margin: 0 0 .75rem; font-weight: bold; color: #64748b; }
+.card p:last-child { margin: 0; }
+
+/* Three different resting shadows and their larger hover shadows */
+.soft  { box-shadow: 0 4px 12px rgba(0,0,0,.12); }
+.soft:hover  { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,.25); }
+
+.sharp { box-shadow: 6px 6px 0 #334155; }
+.sharp:hover { transform: translateY(-10px); box-shadow: 12px 16px 0 #334155; }
+
+.glow  { box-shadow: 0 0 14px rgba(99,102,241,.5); }
+.glow:hover  { transform: translateY(-10px); box-shadow: 0 0 36px rgba(99,102,241,.85); }
