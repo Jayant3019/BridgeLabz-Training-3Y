@@ -1,0 +1,20 @@
+/* Theme: override Bootstrap CSS variables on :root (Bootstrap 5.3 reads them) */
+:root {
+  --bs-primary: #0d9488;            /* teal theme colour */
+  --bs-primary-rgb: 13, 148, 136;   /* needed for utilities like .bg-primary */
+  --bs-font-sans-serif: 'Poppins', system-ui, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-link-color: #0d9488;
+}
+/* Buttons use their own scoped variables, so override .btn-primary's */
+.btn-primary {
+  --bs-btn-bg: #0d9488;
+  --bs-btn-border-color: #0d9488;
+  --bs-btn-hover-bg: #0b7a70;
+  --bs-btn-hover-border-color: #0b7a70;
+  --bs-btn-active-bg: #096860;
+  --bs-btn-active-border-color: #096860;
+}
+h1, h2, h3, h4 { font-weight: 700; }
+.card-title { color: var(--bs-primary); }
+.card { border: 0; border-radius: 14px; overflow: hidden; }

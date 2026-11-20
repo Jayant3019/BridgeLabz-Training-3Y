@@ -1,0 +1,4 @@
+.hero {
+  background: linear-gradient(rgba(60,20,10,.75), rgba(60,20,10,.75)), url("https://picsum.photos/seed/restaurant/1400/500") center/cover;
+}
+.table th { letter-spacing: .5px; }

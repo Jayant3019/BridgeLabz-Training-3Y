@@ -1,0 +1,10 @@
+/* .shadow-sm at rest -> bigger shadow on hover with a smooth transition */
+.plan-card {
+  border: 0;
+  border-radius: 16px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.25) !important; /* same look as .shadow-lg */
+}

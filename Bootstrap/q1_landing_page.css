@@ -1,0 +1,12 @@
+/* Custom styles that sit on top of Bootstrap */
+.site-header .navbar { background: #12203a; }
+.hero {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+}
+.feature-box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+.feature-box .icon { font-size: 2.5rem; margin-bottom: .5rem; }
+.site-footer { background: #12203a; }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notifications Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q6_notifications_dashboard.css">
+</head>
+<body class="bg-body-secondary">
+  <header class="bg-dark text-white py-3">
+    <div class="container"><h1 class="h3 mb-0">Notification Center</h1></div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Summary "well": bordered, padded, light background -->
+    <section class="bg-light border rounded p-4 mb-4 summary-well">
+      <h2 class="h5">Today's summary</h2>
+      <p class="mb-0">You have <strong>3 new messages</strong>, <strong>1 tip</strong> and <strong>1 warning</strong> waiting for review.</p>
+    </section>
+
+    <!-- card groups the alerts -->
+    <section class="card shadow-sm">
+      <div class="card-header fw-semibold">Recent notifications</div>
+      <div class="card-body">
+        <!-- alert-success / alert-info / alert-danger = contextual colours -->
+        <div class="alert alert-success" role="alert">
+          <strong>New message:</strong> Priya sent you the Q3 design files.
+        </div>
+        <div class="alert alert-info" role="alert">
+          <strong>Tip:</strong> Use keyboard shortcut <kbd>Ctrl</kbd> + <kbd>K</kbd> to search anything quickly.
+        </div>
+        <div class="alert alert-danger" role="alert">
+          <strong>Warning:</strong> Your storage is 92% full. Free up space to keep syncing.
+        </div>
+        <!-- alert-dismissible + btn-close with data-bs-dismiss (uses Bootstrap JS) -->
+        <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+          <strong>Reminder:</strong> Team meeting starts at 3:00 PM today.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-muted py-3"><small>&copy; 2026 Dashboard Demo</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

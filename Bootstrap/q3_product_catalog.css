@@ -1,0 +1,10 @@
+/* Hover effect: .shadow-sm is the resting state, CSS upgrades it smoothly on hover */
+.product-card {
+  transition: transform .3s ease, box-shadow .3s ease;
+  border: 0;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.2) !important;
+}
+.price { color: #198754; font-size: 1.15rem; }

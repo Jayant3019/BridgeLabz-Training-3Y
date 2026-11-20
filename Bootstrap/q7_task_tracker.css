@@ -1,0 +1,4 @@
+.list-group-item { padding: 1rem 1.25rem; transition: background .2s; }
+.list-group-item:hover { background: #f1f5f9; }
+.badge { min-width: 4.5rem; }
+header .badge { min-width: 0; }
