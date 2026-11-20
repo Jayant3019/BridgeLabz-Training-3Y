@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="q4_selectors.css">
+</head>
+<body>
+  <header>
+    <h1 id="page-title">CSS Selectors Practice</h1>
+    <p>Each box below is styled by a different type of selector.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Element selector</h2>
+      <p>Every paragraph has a base style set with the <code>p</code> selector.</p>
+    </section>
+
+    <section>
+      <h2>2. Class selector</h2>
+      <p class="highlight">This paragraph uses <code>.highlight</code>.</p>
+      <p>This one does not.</p>
+    </section>
+
+    <section>
+      <h2>3. ID selector</h2>
+      <p id="unique-note">This paragraph is the only one with <code>#unique-note</code>.</p>
+    </section>
+
+    <section>
+      <h2>4. Attribute selector</h2>
+      <ul>
+        <li><a href="https://example.com">External link (https)</a></li>
+        <li><a href="about.html">Internal link</a></li>
+        <li><a href="report.pdf">Download PDF file</a></li>
+      </ul>
+    </section>
+
+    <section class="combinators">
+      <h2>5. Combinators</h2>
+      <div class="box">
+        <p>Direct child paragraph of .box (child combinator <code>&gt;</code>).</p>
+        <div class="inner">
+          <p>Nested paragraph (descendant selector, but not a direct child).</p>
+        </div>
+      </div>
+      <h3 class="sub">Adjacent sibling heading</h3>
+      <p>Paragraph right after the heading (adjacent sibling <code>+</code>).</p>
+      <p>Second paragraph after the heading (general sibling <code>~</code>).</p>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

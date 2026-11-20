@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+header, footer { text-align: center; padding: 1.5rem 1rem; background: #0f172a; color: #fff; }
+header h1 { margin: 0 0 .25rem; }
+header p, footer p { margin: 0; color: #cbd5e1; }
+
+main { flex: 1; display: flex; align-items: center; padding: 2rem 1rem; }
+
+/* Flex: distribute examples evenly */
+.showcase { width: 100%; max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 2rem; }
+
+.demo { width: 220px; display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; }
+.demo p { margin: 0; font-size: .85rem; color: #475569; }
+code { background: #e2e8f0; padding: 0 .25rem; border-radius: 3px; }
+
+/* ---------- Shared button look ---------- */
+button {
+  padding: .9rem 1.6rem;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);          /* subtle resting shadow */
+  transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+}
+button:focus { outline: 3px solid #f59e0b; outline-offset: 3px; }
+
+/* 1. Grow + color change */
+.grow { background: #2563eb; }
+.grow:hover { transform: scale(1.1); background: #16a34a; box-shadow: 0 8px 18px rgba(22,163,74,.4); }
+
+/* 2. Rotate + shadow */
+.tilt { background: #7c3aed; }
+.tilt:hover { transform: rotate(-4deg) scale(1.05); background: #6d28d9; box-shadow: 0 10px 20px rgba(109,40,217,.4); }
+
+/* 3. Lift on hover, press on active */
+.lift { background: #ea580c; }
+.lift:hover  { transform: translateY(-6px); background: #c2410c; box-shadow: 0 12px 20px rgba(194,65,12,.4); }
+.lift:active { transform: translateY(0) scale(.97); box-shadow: 0 2px 4px rgba(0,0,0,.3); }
+
+/* 4. Tile reacts to both hover and keyboard focus */
+.tile {
+  width: 160px; height: 100px;
+  display: flex; justify-content: center; align-items: center;
+  text-align: center; padding: .5rem;
+  background: #0d9488; color: #fff; font-weight: bold;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+  transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+  outline: none;
+}
+.tile:hover, .tile:focus { transform: scale(1.12) rotate(2deg); background: #0f766e; box-shadow: 0 0 0 4px #99f6e4, 0 12px 20px rgba(15,118,110,.4); }

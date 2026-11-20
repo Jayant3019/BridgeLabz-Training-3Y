@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="q8_box_sizing.css">
+</head>
+<body>
+  <header>
+    <h1>content-box vs border-box</h1>
+    <p>Both boxes: <code>width: 300px; padding: 30px; border: 5px</code></p>
+  </header>
+
+  <main>
+    <section class="compare">
+      <article class="box content-box">
+        <h2>Default (content-box)</h2>
+        <p>The width applies to the content only. Padding and border are added on top.</p>
+        <p class="total">Total width = 300 + 60 + 10 = <strong>370px</strong></p>
+      </article>
+
+      <article class="box border-box">
+        <h2>box-sizing: border-box</h2>
+        <p>The width includes content, padding and border, so the box stays the size you set.</p>
+        <p class="total">Total width = <strong>300px</strong></p>
+      </article>
+    </section>
+
+    <section class="explain">
+      <h2>Why it matters</h2>
+      <p>With <code>border-box</code>, adding padding never makes an element wider than planned, which makes layouts far more predictable. That is why most developers apply it globally with <code>* { box-sizing: border-box; }</code>.</p>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

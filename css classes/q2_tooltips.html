@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Tooltips</title>
+  <link rel="stylesheet" href="q2_tooltips.css">
+</head>
+<body>
+  <header>
+    <h1>Pure CSS Tooltips</h1>
+    <p>Hover (or Tab to) any item below.</p>
+  </header>
+
+  <main>
+    <section class="tooltip-row">
+      <!-- tabindex="0" lets keyboard users trigger the tooltip with :focus too -->
+      <span class="tip" tabindex="0" data-tooltip="Return to the homepage">🏠 Home</span>
+      <span class="tip" tabindex="0" data-tooltip="Adjust your preferences">⚙️ Settings</span>
+      <span class="tip" tabindex="0" data-tooltip="You have 3 new messages">✉️ Inbox</span>
+      <span class="tip" tabindex="0" data-tooltip="Cascading Style Sheets">CSS</span>
+      <span class="tip" tabindex="0" data-tooltip="Delete this item permanently">🗑️ Delete</span>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

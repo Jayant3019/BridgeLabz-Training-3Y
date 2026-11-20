@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="q1_pseudo_classes.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Pseudo-Classes</h1>
+    <p>Hover, focus, click and tab to see each state change.</p>
+  </header>
+
+  <main>
+    <!-- Flex row holding all four examples -->
+    <section class="examples">
+      <article class="example">
+        <h2>:hover</h2>
+        <a href="#" class="demo-link">Hover this link</a>
+        <p>Applies while the mouse pointer is over the element.</p>
+      </article>
+
+      <article class="example">
+        <h2>:focus</h2>
+        <input type="text" class="demo-input" placeholder="Click or Tab here">
+        <p>Applies when the element receives keyboard or click focus.</p>
+      </article>
+
+      <article class="example">
+        <h2>:active</h2>
+        <button type="button" class="demo-button">Press and hold</button>
+        <p>Applies during the moment the element is being clicked.</p>
+      </article>
+
+      <article class="example">
+        <h2>:nth-child()</h2>
+        <ul class="demo-list">
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+          <li>Item four</li>
+        </ul>
+        <p>Selects children by position, here odd and even list items.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>

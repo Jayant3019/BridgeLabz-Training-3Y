@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+
+/* Page foundation */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* Element selectors: header and footer share a theme */
+header, footer { background: #334155; color: #fff; text-align: center; padding: 1.5rem 1rem; }
+header p, footer p { margin: .25rem 0 0; }
+
+main { max-width: 800px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+section { background: #fff; padding: 1rem 1.5rem; margin-bottom: 1.25rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+
+/* ELEMENT: base style for every paragraph */
+p { line-height: 1.6; margin: .5rem 0; }
+
+/* CLASS: highlighted paragraph */
+.highlight { background: #fef08a; padding: .5rem; border-left: 4px solid #eab308; }
+
+/* ID: one unique element */
+#unique-note { background: #bbf7d0; padding: .5rem; border-left: 4px solid #16a34a; font-weight: bold; }
+#page-title { margin: 0; letter-spacing: 1px; }
+
+/* ATTRIBUTE: links that start with https */
+a[href^="https"] { color: #dc2626; font-weight: bold; }
+/* ATTRIBUTE: links that end in .pdf get a marker */
+a[href$=".pdf"] { color: #7c3aed; }
+a[href$=".pdf"]::before { content: "📄 "; }
+/* ATTRIBUTE: exact match for local html pages */
+a[href="about.html"] { color: #0369a1; }
+
+/* DESCENDANT: any p inside .box (at any depth) gets a border */
+.box p { border: 1px dashed #64748b; padding: .4rem; }
+/* CHILD: only direct child p of .box turns blue */
+.box > p { background: #dbeafe; }
+/* DESCENDANT: nested paragraph */
+.inner { margin-left: 1rem; }
+.inner p { background: #fce7f3; }
+
+/* ADJACENT SIBLING: only the paragraph immediately after .sub */
+.sub + p { background: #ddd6fe; padding: .4rem; }
+/* GENERAL SIBLING: all paragraphs after .sub (adjacent one included, overridden above for bg) */
+.sub ~ p { border-left: 4px solid #7c3aed; padding-left: .6rem; }
+
+code { background: #e2e8f0; padding: 0 .25rem; border-radius: 3px; }

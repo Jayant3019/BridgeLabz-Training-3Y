@@ -1,0 +1,81 @@
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+header, footer {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+header h1 { margin: 0 0 .25rem; }
+header p, footer p { margin: 0; }
+
+main { padding: 2rem 1rem; }
+
+/* ---------- Layout: Flexbox row (wraps on small screens) ---------- */
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.example {
+  flex: 1 1 220px;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .75rem;
+}
+.example h2 { margin: 0; font-size: 1.1rem; color: #1e3a8a; font-family: "Courier New", monospace; }
+.example p { margin: 0; font-size: .9rem; color: #4b5563; }
+
+/* ---------- :hover on a link ---------- */
+.demo-link {
+  color: #1d4ed8;
+  padding: .4rem .6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.demo-link:hover { background: #1d4ed8; color: #fff; }
+
+/* ---------- :focus on an input ---------- */
+.demo-input {
+  width: 100%;
+  padding: .5rem;
+  border: 2px solid #9ca3af;
+  border-radius: 6px;
+}
+.demo-input:focus { outline: none; border-color: #16a34a; background: #ecfdf5; }
+
+/* ---------- :active on a button ---------- */
+.demo-button {
+  padding: .6rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+.demo-button:hover { background: #1d4ed8; }
+.demo-button:active { background: #dc2626; transform: translateY(2px); }
+
+/* ---------- :nth-child() on list items ---------- */
+.demo-list { margin: 0; padding: 0; list-style: none; width: 100%; }
+.demo-list li { padding: .4rem .6rem; }
+.demo-list li:nth-child(odd)  { background: #dbeafe; }
+.demo-list li:nth-child(even) { background: #fde68a; }
+.demo-list li:hover { background: #fca5a5; }

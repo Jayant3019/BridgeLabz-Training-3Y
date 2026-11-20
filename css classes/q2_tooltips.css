@@ -1,0 +1,79 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+header, footer { text-align: center; padding: 1.5rem 1rem; }
+header h1 { margin: 0 0 .25rem; }
+header p, footer p { margin: 0; color: #94a3b8; }
+
+/* main fills the page and centers the examples both ways */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.tooltip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* ---------- Tooltip trigger ---------- */
+.tip {
+  position: relative;            /* anchor for the absolutely positioned tooltip */
+  padding: .6rem 1rem;
+  background: #1e293b;
+  border-radius: 8px;
+  cursor: help;
+  outline: none;
+}
+
+/* ---------- Tooltip bubble (above the element) ---------- */
+.tip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 200px;
+  padding: .5rem .75rem;
+  background: #facc15;
+  color: #111827;
+  font-size: .85rem;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0;                    /* hidden by default */
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ---------- Tooltip arrow ---------- */
+.tip::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #facc15;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ---------- Show on hover / keyboard focus ---------- */
+.tip:hover::after, .tip:hover::before,
+.tip:focus::after, .tip:focus::before { opacity: 1; }
+.tip:focus { box-shadow: 0 0 0 2px #facc15; }

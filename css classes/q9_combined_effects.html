@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combined Effects</title>
+  <link rel="stylesheet" href="q9_combined_effects.css">
+</head>
+<body>
+  <header>
+    <h1>Combined CSS Effects</h1>
+    <p>Pseudo-classes + transitions + transforms together</p>
+  </header>
+
+  <main>
+    <section class="showcase">
+      <article class="demo">
+        <button type="button" class="grow">Grow &amp; Recolor</button>
+        <p><code>:hover</code> + <code>scale(1.1)</code> + background change</p>
+      </article>
+
+      <article class="demo">
+        <button type="button" class="tilt">Tilt Me</button>
+        <p><code>:hover</code> + <code>rotate(-4deg)</code> + deeper shadow</p>
+      </article>
+
+      <article class="demo">
+        <button type="button" class="lift">Lift Up</button>
+        <p><code>:hover</code> lifts, <code>:active</code> presses down</p>
+      </article>
+
+      <article class="demo">
+        <div class="tile" tabindex="0">Focus / Hover Tile</div>
+        <p><code>:focus</code> and <code>:hover</code> both scale and glow</p>
+      </article>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 CSS Practice</p></footer>
+</body>
+</html>
