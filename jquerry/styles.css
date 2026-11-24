@@ -1,0 +1,9 @@
+*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#f4f6fb;color:#202938}
+main{max-width:1000px;margin:32px auto;padding:24px;background:white;border-radius:12px;box-shadow:0 4px 18px #00000012}
+h1{color:#244a86}button{padding:9px 14px;margin:5px;border:0;border-radius:6px;background:#2459a6;color:white;cursor:pointer}
+input{padding:10px;margin:6px 0;border:1px solid #bbb;border-radius:5px}
+.card,.product,.course,.post,.employee,.banner,.faq-item,.topic,.widget{padding:15px;margin:10px 0;border:1px solid #d8deea;border-radius:8px}
+.selected,.highlight{background:#fff1b8!important;border:2px solid #e2a400}
+.hidden{display:none}.muted{color:#667085}.details,.contact,.answer{display:none;margin-top:8px}
+.success{color:green;font-weight:bold}.error{color:#c62828}.invalid{border:2px solid red!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
